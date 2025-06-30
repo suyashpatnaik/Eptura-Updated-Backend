@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "backend/*.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/ask",
+      "dest": "backend/ask.py"
+    },
+    {
+      "src": "/",
+      "dest": "backend/ask.py"
+    }
+  ]
+}
